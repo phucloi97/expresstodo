@@ -10,6 +10,6 @@ app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/", express.json());
-app.use("/", itemRoute);
+app.use("/items", itemRoute);
 
 app.listen(PORT, () => console.log(`server start port ${PORT}`));
